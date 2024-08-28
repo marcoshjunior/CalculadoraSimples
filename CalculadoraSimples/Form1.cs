@@ -29,7 +29,7 @@ namespace CalculadoraSimples
         {
             valor1 = Double.Parse(txt_num1.Text);
             valor2 = Double.Parse(txt_num2.Text);
-            //obtem o texto do botao que eu clicar
+            //obtem o texto do botao que clicar
             string tipo_operacao = (sender as Button).Text;
             //formatando a label
             lbl_resultado.Text = String.Format("{0} {1} {2} = {3}", valor1.ToString(), tipo_operacao, valor2.ToString(), operacao(tipo_operacao));
